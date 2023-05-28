@@ -14,6 +14,7 @@ import tqdm
 import shutil
 from colorama import Fore, Back, Style
 
+
 def crack(file, wordlist):
     start = time.time()
     password_is_found = False
@@ -42,10 +43,11 @@ def crack(file, wordlist):
         print("Time taken: " + str(time.time() - start))
     else:
         print("Password found: " + Fore.GREEN + password_found + Style.RESET_ALL)
-        print("Time taken: " , time_taken)
+        print("Time taken: ", time_taken)
 
     os.chdir("..")
     shutil.rmtree("temp")
+
 
 if __name__ == "__main__":
     print("Welcome to zip_crack!")
@@ -64,5 +66,5 @@ if __name__ == "__main__":
     if not os.path.isfile(args.wordlist):
         print("The wordlist does not exist")
         sys.exit(1)
-    
+
     crack(args.file, args.wordlist)
