@@ -52,7 +52,11 @@ def crack(file, wordlist):
 if __name__ == "__main__":
     print("Welcome to zip_crack!")
     print("A tool to crack zip files")
-
+    print("Only use this tool on zip files you have permission to crack")
+    try:
+        input("Press enter to continue or ctrl + c to exit")
+    except KeyboardInterrupt:
+        sys.exit(1)
     parser = argparse.ArgumentParser(description="A tool to crack zip files")
     parser.add_argument("-f", "--file", help="The zip file to crack", required=True)
     parser.add_argument("-w", "--wordlist", help="The wordlist to use", required=True)
