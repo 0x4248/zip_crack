@@ -25,8 +25,12 @@ def crack(file, wordlist):
     shutil.copyfile(file, "temp/" + file)
     time_taken = 0
     password_found = ""
-    with open(wordlist, "r") as f:
-        passwords = f.read().splitlines()
+    try:
+        with open(wordlist, "r") as f:
+            passwords = f.read().splitlines()
+    except Exception as e:
+        print("Error: " + str(e))
+        sys.exit(1)
     os.chdir("temp")
     for password in tqdm.tqdm(passwords, desc="Cracking zip file", unit="password"):
         try:
