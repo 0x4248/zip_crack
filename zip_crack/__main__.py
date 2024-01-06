@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Zip crack
 # A tool to crack zip files
-# Github: https://www.github.com/awesomelewis2007/zip_crack
+# Github: https://www.github.com/lewisevans2007/zip_crack
 # Licence: GNU General Public Licence v3.0
 # Author: Lewis Evans
 
