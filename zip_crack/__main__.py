@@ -3,7 +3,7 @@
 # A tool to crack zip files
 # Github: https://www.github.com/0x4248/zip_crack
 # Licence: GNU General Public Licence v3.0
-# Author: Lewis Evans
+# Author: 0x4248
 
 import zipfile
 import argparse
