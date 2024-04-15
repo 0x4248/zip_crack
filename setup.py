@@ -5,9 +5,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="zip_crack",
-    url="https://github.com/awesomelewis2007/zip_crack/",
-    author="Lewis Evans",
-    author_email="awesomelewis2007@gmail.com",
+    url="https://github.com/0x4248/zip_crack/",
+    author="0x4248",
     packages=["zip_crack"],
     install_requires=[""],
     version="1.0.0",
